@@ -49,10 +49,16 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://image.nuxtjs.org
+    '@nuxt/image',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
-  content: {},
+  content: {
+    liveEdit: false,
+  },
+
+  image: {},
 
   // https://pwa.nuxtjs.org/setup
   pwa: {
