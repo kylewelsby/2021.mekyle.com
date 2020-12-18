@@ -64,6 +64,9 @@ export default {
     manifest: {
       display: 'browser',
     },
+    workbox: {
+      clientsClaim: false,
+    },
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

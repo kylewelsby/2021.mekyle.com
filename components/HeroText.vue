@@ -13,52 +13,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-const SKILLS = [
-  'Vue.js',
-  'Nuxt.js',
-  'JavaScript',
-  'Ruby |CSS',
-  'HTML',
-  'JSON',
-  'Node.js',
-  'Express.js',
-  'Sequelize',
-  'Jest',
-  'Cypress.io',
-  'GraphQL',
-  'Electron',
-  'VueX',
-  'XState.js',
-  'PostgreSQL',
-  'Redis',
-  'Google Cloud Platform',
-  'Firebase',
-  'Amazon Web Services',
-  'CloudFlare',
-  'Vue.js',
-  'Nuxt.js',
-  'JavaScript',
-  'Ruby',
-  'CSS',
-  'HTML',
-  'JSON',
-  'Node.js',
-  'Express.js',
-  'Sequelize',
-  'Jest',
-  'Cypress.io',
-  'GraphQL',
-  'Electron',
-  'VueX',
-  'XState.js',
-  'PostgreSQL',
-  'Redis',
-  'Google Cloud Platform',
-  'Firebase',
-  'Amazon Web Services',
-  'CloudFlare',
-]
 export default Vue.extend({
+  props: {
+    skills: {
+      type: Array,
+      default: () => [],
+    },
+  },
   data() {
     return {
       repeat: 20,
@@ -67,7 +28,7 @@ export default Vue.extend({
   },
   computed: {
     formattedText() {
-      return SKILLS.join(' | ') + ' | '
+      return this.skills.join(' | ') + ' | '
     },
   },
 })

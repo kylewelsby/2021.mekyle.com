@@ -38,28 +38,28 @@
       div(
         class="motion-reduce:hidden absolute z-0 top-0 left-0 right-0 h-128 overflow-hidden bg-pablo-500 rounded-b-2xl"
       )
-        HeroText
+        HeroText(
+          :skills="skills"
+        )
     div(
       class="-mt-80 mb-8 max-w-6xl mx-auto grid grid-cols-12 text-white"
     )
       div(
         class="md:col-start-2 col-span-5"
-      ) Passionate software engineer focused on delivering fantastic customer experiances and business objectives, creating tools to automate repetitive tasks and improve the discoverability of information.
-    //- svg(
-    //-   class="fill-current text-cloud-burst-500 hidden md:block -mb-32 -mt-20 z-20 relative",
-    //-   xmlns="http://www.w3.org/2000/svg",
-    //-   viewBox="0 0 1440 320"
-    //- )
-    //-   path(
-    //-     fill-opacity="1",
-    //-     d="M0,224L1440,32L1440,320L0,320Z"
-    //-   )
+      )
+        slot
 </template>
 <script lang="ts">
 import Vue from 'vue'
 const multiSizesWebP = require(`~/assets/images/kyle-welsby-portrait-removebg.png?resize&sizes[]=200&sizes[]=480&sizes[]=677&sizes[]=826&sizes[]=955&sizes[]=1073&format=webp`)
 const multiSizesPNG = require(`~/assets/images/kyle-welsby-portrait-removebg.png?resize&sizes[]=200&sizes[]=480&sizes[]=677&sizes[]=826&sizes[]=955&sizes[]=1073&format=png`)
 export default Vue.extend({
+  props: {
+    skills: {
+      type: Array,
+      default: () => [],
+    },
+  },
   data() {
     return {
       multiSizesWebP,
@@ -68,31 +68,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style scoped>
-/* .name {
-  position: relative;
-  display: inline-block;
-}
-.name::before,
-.name::after {
-  @apply bg-old-lavender-500;
-
-  content: ' ';
-  position: absolute;
-  height: 4px;
-  min-width: 8px;
-  top: calc(50% - 2px);
-} */
-
-/* .name::before {
-  right: 100%;
-  width: 100%;
-} */
-
-/* .line {
-  @apply bg-old-lavender-500;
-
-  min-height: 4px;
-} */
-</style>
