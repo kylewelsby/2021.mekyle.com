@@ -52,6 +52,7 @@ jobs:
         env:
           NUXT_ENV: production
           NODE_ENV: production
+          BASE_PATH: /2021.mekyle.com/
 
       - name: Run tests 🧪
         run: yarn test
@@ -61,4 +62,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
-          BASE_URL: https://kylewelsby.github.io/2021.mekyle.com
