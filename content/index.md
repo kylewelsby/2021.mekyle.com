@@ -5,7 +5,8 @@ skills:
   - Vue.js
   - Nuxt.js
   - JavaScript
-  - Ruby |CSS
+  - Ruby
+  - CSS
   - HTML
   - JSON
   - Node.js
