@@ -1,0 +1,11 @@
+{
+  "name": "2021.mekyle.com",
+  "short_name": "2021.mekyle.com",
+  "description": "## Build Setup",
+  "icons": [],
+  "start_url": "/2021.mekyle.com/?standalone=true",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#181818",
+  "lang": "en"
+}
