@@ -47,5 +47,17 @@ jobs:
       - name: Run linter 👀
         run: yarn lint
 
+      - name: Build 🚧
+        run: yarn generate
+        env:
+          NUXT_ENV: production
+          NODE_ENV: production
+
       - name: Run tests 🧪
         run: yarn test
+
+      - name: Deploy 🚀
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
