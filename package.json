@@ -1,5 +1,6 @@
 {
   "name": "2021.mekyle.com",
+  "author": "Kyle Welsby <kyle@mekyle.com>",
   "version": "1.0.0",
   "private": true,
   "scripts": {

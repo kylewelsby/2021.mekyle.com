@@ -2,6 +2,9 @@ export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
   ssr: false,
 
+  // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern
+  modern: true,
+
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
 
@@ -50,6 +53,19 @@ export default {
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
   content: {},
+
+  // https://pwa.nuxtjs.org/setup
+  pwa: {
+    icon: false,
+    meta: {
+      mobileApp: false,
+      title: 'Top Software Engineer - Kyle Welsby',
+      theme_color: '#181818',
+    },
+    manifest: {
+      display: 'browser',
+    },
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
