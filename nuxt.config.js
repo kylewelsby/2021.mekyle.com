@@ -56,7 +56,6 @@ export default {
 
   // https://pwa.nuxtjs.org/setup
   pwa: {
-    icon: false,
     meta: {
       mobileApp: false,
       title: 'Top Software Engineer - Kyle Welsby',
