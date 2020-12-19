@@ -6,7 +6,11 @@ module.exports = {
     node: true,
     es2020: true,
   },
-  extends: ['plugin:prettier/recommended', 'plugin:gridsome/recommended'],
+  extends: [
+    'prettier',
+    'plugin:prettier/recommended',
+    'plugin:gridsome/recommended',
+  ],
   plugins: ['prettier'],
   rules: {},
 }
