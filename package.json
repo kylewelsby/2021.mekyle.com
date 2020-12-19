@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "build": "NODE_ENV=production gridsome build",
+    "start": "serve ./dist",
     "develop": "gridsome develop",
     "explore": "gridsome explore",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "test": "echo 'no unit tests yet'"
   },
   "dependencies": {
@@ -26,6 +28,7 @@
     "lint-staged": "^10.5.3",
     "postcss": "^7",
     "pug": "^3.0.0",
+    "serve": "^11.3.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
     "vue-eslint-parser": "^7.3.0"
   },
