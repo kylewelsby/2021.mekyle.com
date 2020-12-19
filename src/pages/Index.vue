@@ -3,19 +3,18 @@
     Hero(
       :skills="skills"
     ) {{ introduction }}
-    //- <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    //- g-image(
-    //-   alt="Example image"
-    //-   src="~/favicon.png"
-    //-   width="135"
-    //- )
+    CodersRank(
+      class="relative z-30"
+    )
 </template>
 
 <script>
 import Hero from '~/components/Hero.vue'
+import CodersRank from '~/components/CodersRank.vue'
 export default {
   components: {
     Hero,
+    CodersRank,
   },
   data() {
     return {
