@@ -12,6 +12,9 @@
     Articles(
       :articles="$page.articles.edges"
     )
+    Clients(
+      :clients="$page.clients.edges"
+    )
 </template>
 
 <page-query>
@@ -40,6 +43,25 @@ query {
       }
     }
   }
+  clients: allClient(
+    sortBy: "date"
+    order: DESC
+    limit: 5
+  ) {
+    edges {
+      node {
+        id
+        title
+        bgColor
+        icon(
+          width: 64
+          height: 64
+          fit: contain
+        )
+        content
+      }
+    }
+  }
 }
 </page-query>
 
@@ -48,12 +70,15 @@ import Hero from '~/components/Hero.vue'
 import CodersRank from '~/components/CodersRank.vue'
 import Projects from '~/components/Projects.vue'
 import Articles from '~/components/Articles.vue'
+import Clients from '~/components/Clients.vue'
+
 export default {
   components: {
     Hero,
     CodersRank,
     Projects,
     Articles,
+    Clients,
   },
   data() {
     return {

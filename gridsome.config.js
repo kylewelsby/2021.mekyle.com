@@ -57,5 +57,12 @@ module.exports = {
         path: './content/projects/*.md',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Client',
+        path: './content/clients/**/*.md',
+      },
+    },
   ],
 }
