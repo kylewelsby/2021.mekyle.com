@@ -39,7 +39,6 @@ export default Vue.extend({
 </script>
 <style scoped>
 .ticker {
-  image-rendering: optimizeQuality;
   transform: rotate(-10deg) scale(0.75);
   transform-origin: -40% 75%;
 }
