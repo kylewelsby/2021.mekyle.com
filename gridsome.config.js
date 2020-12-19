@@ -50,5 +50,12 @@ module.exports = {
         isCollection: true,
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Project',
+        path: './content/projects/*.md',
+      },
+    },
   ],
 }

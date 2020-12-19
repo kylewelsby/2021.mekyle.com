@@ -6,15 +6,36 @@
     CodersRank(
       class="relative z-30"
     )
+    Projects(
+      :projects="$page.projects.edges"
+    )
 </template>
+
+<page-query>
+query {
+  projects: allProject(sortBy: "date", order: DESC) {
+    edges {
+      node {
+        title
+        href
+        bgColor
+        icon
+        content
+      }
+    }
+  }
+}
+</page-query>
 
 <script>
 import Hero from '~/components/Hero.vue'
 import CodersRank from '~/components/CodersRank.vue'
+import Projects from '~/components/Projects.vue'
 export default {
   components: {
     Hero,
     CodersRank,
+    Projects,
   },
   data() {
     return {
