@@ -3,7 +3,6 @@ export default {
   ssr: false,
 
   // https://nuxtjs.org/docs/2.x/configuration-glossary/configuration-modern
-  modern: true,
 
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
