@@ -9,6 +9,9 @@
     Projects(
       :projects="$page.projects.edges"
     )
+    Articles(
+      :articles="$page.articles.edges"
+    )
 </template>
 
 <page-query>
@@ -16,11 +19,24 @@ query {
   projects: allProject(sortBy: "date", order: DESC) {
     edges {
       node {
+        id
         title
         href
         bgColor
         icon
         content
+      }
+    }
+  }
+  articles: allDevToArticle(sortBy: "published_at", order: DESC, limit: 4) {
+    edges {
+      node {
+        id
+        title
+        slug
+        published_at
+        cover_image
+        canonical_url
       }
     }
   }
@@ -31,11 +47,13 @@ query {
 import Hero from '~/components/Hero.vue'
 import CodersRank from '~/components/CodersRank.vue'
 import Projects from '~/components/Projects.vue'
+import Articles from '~/components/Articles.vue'
 export default {
   components: {
     Hero,
     CodersRank,
     Projects,
+    Articles,
   },
   data() {
     return {

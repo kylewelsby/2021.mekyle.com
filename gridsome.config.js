@@ -45,7 +45,7 @@ module.exports = {
           },
         },
         endpoint: 'https://dev.to/api/articles/me/published',
-        typeName: 'devToArticles',
+        typeName: 'devToArticle',
         isStatic: false,
         isCollection: true,
       },
