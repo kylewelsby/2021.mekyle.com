@@ -23,7 +23,7 @@ import Vue from 'vue'
 import ProjectSummary from './ProjectSummary.vue'
 export default Vue.extend({
   components: {
-    ProjectSummary
+    ProjectSummary,
   },
   props: {
     projects: {
