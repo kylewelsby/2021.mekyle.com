@@ -17,17 +17,24 @@ module.exports = {
     {
       use: 'gridsome-plugin-pug',
     },
-    // {
-    //   use: "gridsome-plugin-pwa",
-    //   options: {
-    //     disableServiceWorker: true,
-    //     title: "Software Engineer - Kyle Welsby",
-    //     display: "browser",
-    //     startUrl: "/",
-    //     themeColor: "#181818",
-    //     shortName: "Kyle Welsby"
-    //   }
-    // },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Software Engineer - Kyle Welsby',
+        display: 'browser',
+        startUrl: '/',
+        themeColor: '#181818',
+        shortName: 'Kyle Welsby',
+        disableServiceWorker: false,
+        serviceWorkerPath: 'sw.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        icon: 'src/icon.png',
+        maskableIcon: true,
+        msTitleImage: '',
+        msTitleColor: '#181818',
+        gcmSenderId: null,
+      },
+    },
     {
       use: 'gridsome-source-rest',
       options: {
