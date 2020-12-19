@@ -22,7 +22,7 @@ module.exports = {
       options: {
         title: 'Software Engineer - Kyle Welsby',
         display: 'browser',
-        startUrl: '/',
+        startUrl: process.env.BASE_PATH || '/',
         themeColor: '#181818',
         shortName: 'Kyle Welsby',
         disableServiceWorker: false,
