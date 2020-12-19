@@ -22,6 +22,10 @@ export default {
     base: process.env.BASE_PATH || '/',
   },
 
+  publicRuntimeConfig: {
+    devToApiKey: process.env.DEV_TO_API_KEY || '<DEV_TO_API_KEY>',
+  },
+
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [],
 
@@ -39,7 +43,6 @@ export default {
     '@nuxtjs/stylelint-module',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    '@aceforth/nuxt-optimized-images',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -50,6 +53,8 @@ export default {
     '@nuxt/content',
     // https://image.nuxtjs.org
     '@nuxt/image',
+    // https://github.com/nuxt-community/proxy-module#readme
+    '@nuxtjs/proxy',
   ],
 
   // Content module configuration (https://go.nuxtjs.dev/config-content)
@@ -76,7 +81,13 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
-  optimizedImages: {
-    optimizeImages: true,
+
+  proxy: {
+    '/dev-to': {
+      target: 'https://dev.to',
+      pathRewrite: {
+        '^/dev-to': '/api',
+      },
+    },
   },
 }

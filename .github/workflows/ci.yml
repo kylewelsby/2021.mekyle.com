@@ -53,6 +53,7 @@ jobs:
           NUXT_ENV: production
           NODE_ENV: production
           BASE_PATH: /2021.mekyle.com/
+          DEV_TO_API_KEY: ${{ secrets.DEV_TO_API_KEY }}
 
       - name: Run tests 🧪
         run: yarn test
