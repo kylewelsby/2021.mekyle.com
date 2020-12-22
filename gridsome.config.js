@@ -71,5 +71,12 @@ module.exports = {
         path: './content/clients/**/*.md',
       },
     },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Cv',
+        path: './content/cv/**/*.md',
+      },
+    },
   ],
 }
