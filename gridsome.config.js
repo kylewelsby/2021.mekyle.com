@@ -18,6 +18,13 @@ module.exports = {
       use: 'gridsome-plugin-pug',
     },
     {
+      use: 'gridsome-plugin-plausible-analytics',
+      options: {
+        dataDomain: 'mekyle.com',
+        outboundLinkTracking: true,
+      },
+    },
+    {
       use: 'gridsome-plugin-pwa',
       options: {
         title: 'Software Engineer - Kyle Welsby',
