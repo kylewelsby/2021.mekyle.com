@@ -2,7 +2,7 @@
   g-link(
     :to="{}"
     :href="article.canonical_url"
-    class="block relative rounded-2xl bg-black text-white px-6 text-center h-56 flex flex-col items-center justify-center overflow-hidden"
+    class="block relative rounded-2xl bg-black text-white px-6 text-center h-32 md:h-56 flex flex-col items-center justify-center overflow-hidden"
   )
     div.relative.z-30
       h4.sr-only.text-2xl.font-bold.mb-2 {{ article.title }}

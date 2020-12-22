@@ -6,14 +6,16 @@
       class="md:max-w-6xl md:mx-auto text-white"
     )
       h3(
-        class="text-9xl font-extrabold"
+        class="text-4xl md:text-9xl font-extrabold"
       ) Code.
       a(
         :href="href"
-        class="block bg-blue-500 -mt-6 rounded-2xl overflow-hidden bg-cover"
+        class="flex bg-blue-500 -mt-3 md:-mt-6 rounded-2xl overflow-hidden bg-cover"
         :style="{'background-image': `url(${require('~/images/code-icons.svg?inline')})`}"
       )
-        div.text-6xl.font-light.text-left.tracking-wide.leading-snug.py-20.px-20
+        div(
+          class="text-2xl md:text-6xl font-light text-left tracking-wide leading-snug py-4 px-6 md:p-20"
+        )
           | Ranked top 1% <strong class="font-semibold">JavaScript</strong>,
           br
           | top 2% <strong class="font-semibold">Vue.js</strong>,

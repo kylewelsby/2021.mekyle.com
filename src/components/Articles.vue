@@ -6,10 +6,10 @@
       class="md:max-w-6xl md:mx-auto text-white"
     )
       h3(
-        class="relative z-20 text-9xl font-extrabold"
+        class="relative z-20 text-4xl md:text-9xl font-extrabold"
       ) Articles.
       div(
-        class="-mt-6 relative z-10 grid grid-cols-2 gap-4"
+        class="-mt-4 md:-mt-6 relative z-10 grid md:grid-cols-2 gap-4"
       )
         ArticleSummary(
           v-for="edge in articles"
