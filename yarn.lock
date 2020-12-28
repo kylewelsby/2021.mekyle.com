@@ -3988,10 +3988,10 @@ eslint-config-prettier@^7.1.0:
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-7.1.0.tgz#5402eb559aa94b894effd6bddfa0b1ca051c858f"
   integrity sha512-9sm5/PxaFG7qNJvJzTROMM1Bk1ozXVTKI0buKOyb0Bsr1hrwi0H/TzxF/COtf1uxikIK8SwhX7K6zg78jAzbeA==
 
-eslint-plugin-gridsome@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.5.0.tgz#17d20e3e08bbffd0e81fbffac6f150068a8c3dcd"
-  integrity sha512-OS6Eqx3ksX7shkIGvgOWNrzm5ovz/fWnPVhGHrgHPHiEWCdSY8moZZUs2YVt3dRnoJZFNdq039vcBhuhV9lkgQ==
+eslint-plugin-gridsome@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-gridsome/-/eslint-plugin-gridsome-1.5.1.tgz#24179f6ea8d2256008e90a55059709d54f212c4b"
+  integrity sha512-DJPeUh8J8OAtVdkuB2EaxVtqeQr3376nMtiJL3/173W44qc6USSm5sXW9blz+xZfXWUUQ+sOMADO9tqn3eWwVw==
   dependencies:
     "@typescript-eslint/experimental-utils" "^3.3.0"
     prettier "^2.0.5"
