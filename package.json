@@ -20,7 +20,7 @@
     "autoprefixer": "^9",
     "eslint": "^7.16.0",
     "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-gridsome": "^1.5.0",
+    "eslint-plugin-gridsome": "^1.5.1",
     "eslint-plugin-prettier": "^3.3.0",
     "gridsome-plugin-plausible-analytics": "^1.0.0",
     "gridsome-plugin-pug": "^0.0.3",
