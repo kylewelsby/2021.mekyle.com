@@ -2,7 +2,7 @@
   div.w-full.h-full
     div.overflow-hidden
       TextTicker.ticker(
-        :fontSize="16"
+        :fontSize="32"
         :width="1440"
         :height="500"
         :rows="20"

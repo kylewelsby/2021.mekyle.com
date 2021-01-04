@@ -1,16 +1,4 @@
-let state = {
-  color: 'rgba(0,0,0,0.075)',
-  rows: 15,
-  fontSize: 32,
-  row1x: 0,
-  row2x: 0,
-  text: 'hello world',
-  ctx: null,
-  canvas: null,
-  timeout: null,
-}
-
-function render() {
+function render(state) {
   const ctx = state.ctx
   const canvas = state.canvas
   ctx.clearRect(0, 0, canvas.width, canvas.height) // clear view
@@ -28,7 +16,7 @@ function render() {
 
   let n = 0
   while (n < state.rows) {
-    ctx.fillText(state.text, state.row1x + 40 * n, state.rowHeight * n)
+    ctx.fillText(state.text, state.row1x + -80 * n, state.rowHeight * n)
     ctx.fillText(
       state.text,
       state.row2x + -40 * n,
@@ -40,24 +28,40 @@ function render() {
   state.row2x += 0.5
 }
 
-function loop() {
+function loop(state) {
   if (state.timeout) return
   state.timeout = setTimeout(() => {
     clearTimeout(state.timeout)
     state.timeout = null
     requestAnimationFrame(() => {
-      render()
-      loop()
+      render(state)
+      loop(state)
     })
   }, 50)
 }
 
-export function start(canvas, text) {
+export function start(canvas, text, state) {
+  if (!state) {
+    state = {}
+  }
+  state = Object.assign(
+    {
+      color: 'rgba(0,0,0,0.075)',
+      rows: 15,
+      fontSize: 32,
+      row1x: 0,
+      row2x: 0,
+      text: 'hello world',
+      ctx: null,
+      canvas: null,
+      timeout: null,
+    },
+    state
+  )
   state.canvas = canvas
   state.text = text + text
   state.rowHeight = state.fontSize * 2
   state.ctx = canvas.getContext('2d')
   state.textWidth = state.ctx.measureText(state.text).width
-  console.log('starting', state)
-  loop()
+  loop(state)
 }

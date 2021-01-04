@@ -1,6 +1,6 @@
 <template lang="pug">
   canvas(
-    ref="ticker"
+    :ref="ref"
     :width="width * this.scale"
     :height="height * this.scale"
   )
@@ -8,6 +8,7 @@
 <script>
 import Vue from 'vue'
 import { start } from './canvas-render.js'
+let count = 0
 export default Vue.extend({
   props: {
     width: {
@@ -39,10 +40,27 @@ export default Vue.extend({
       default: 'rgba(0,0,0,0.5)',
     },
   },
+  data() {
+    return {
+      ref: 'ticker-0',
+    }
+  },
+  created() {
+    this.ref = `ticker-${count}`
+    count++
+  },
   mounted() {
-    const canvas = this.$refs.ticker
+    const canvas = this.$refs[this.ref]
     if (canvas) {
-      start(canvas, this.$slots.default[0].text)
+      start(canvas, this.$slots.default[0].text, {
+        color: this.color,
+        fontSize: this.fontSize,
+        height: this.height,
+        width: this.width,
+        scale: this.scale,
+        rows: this.rows,
+        speed: this.speed,
+      })
     } else {
       console.error('Failed to start Canvas Render, missing `ticker` in $refs')
     }

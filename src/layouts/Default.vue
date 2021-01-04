@@ -2,6 +2,18 @@
   div
     p.p-4.text-center.absolute.text-white.left-0.right-0.z-40 Hey!, this is a very early view of my up-coming website for 2021.  To view my current live site checkout <a href="https://mekyle.com" class="underline">mekyle.com</a>
     slot
+    div(
+      class="mt-10 mb-20"
+    )
+      div(
+        class="md:max-w-6xl md:mx-auto text-gray-400 flex"
+      )
+        div(
+          class="flex-grow"
+        ) &copy; Kyle Welsby
+        div(
+          class="flex-grow text-right"
+        ) Based in Manchester, UK
 </template>
 
 <static-query>
@@ -14,6 +26,6 @@ query {
 
 <style>
 html {
-  @apply bg-gray-800;
+  @apply bg-gray-900;
 }
 </style>

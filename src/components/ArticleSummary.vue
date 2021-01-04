@@ -8,7 +8,7 @@
       h4.sr-only.text-2xl.font-bold.mb-2 {{ article.title }}
       | {{ article.flare_tag }}
     div(
-      class="absolute top-0 left-0 h-full w-full"
+      class="static top-0 left-0 h-full w-full"
     )
       g-image(
         :src="article.cover_image"

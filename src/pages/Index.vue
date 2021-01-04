@@ -15,10 +15,16 @@
     Clients(
       :clients="$page.clients.edges"
     )
+    Contact(
+      :contacts="$page.contacts.edges[0].node.methods"
+    )
 </template>
 
 <page-query>
 query {
+  metadata {
+    siteName
+  }
   projects: allProject(sortBy: "date", order: DESC) {
     edges {
       node {
@@ -62,6 +68,26 @@ query {
       }
     }
   }
+  contacts: allContact(
+    sortBy: "weight"
+    order: ASC
+  ) {
+    edges {
+      node {
+        title
+        methods {
+          title
+          href
+          bgColor
+          icon(
+            width: 64
+            height: 64
+            fit: contain
+          )
+        }
+      }
+    }
+  }
 }
 </page-query>
 
@@ -71,6 +97,7 @@ import CodersRank from '~/components/CodersRank.vue'
 import Projects from '~/components/Projects.vue'
 import Articles from '~/components/Articles.vue'
 import Clients from '~/components/Clients.vue'
+import Contact from '~/components/Contact.vue'
 
 export default {
   components: {
@@ -79,6 +106,7 @@ export default {
     Projects,
     Articles,
     Clients,
+    Contact,
   },
   data() {
     return {
@@ -108,6 +136,11 @@ export default {
       ],
       introduction:
         'Passionate software engineer focused on delivering fantastic customer experiances and business objectives, creating tools to automate repetitive tasks and improve the discoverability of information.',
+    }
+  },
+  metaInfo() {
+    return {
+      titleTemplate: null,
     }
   },
 }

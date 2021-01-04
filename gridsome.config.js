@@ -61,7 +61,7 @@ module.exports = {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Project',
-        path: './content/projects/*.md',
+        path: './content/projects/**/*.md',
       },
     },
     {
@@ -69,6 +69,13 @@ module.exports = {
       options: {
         typeName: 'Client',
         path: './content/clients/**/*.md',
+      },
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Contact',
+        path: './content/contact.md',
       },
     },
     {
