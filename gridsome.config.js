@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Top Software Engineer - Kyle Welsby',
+  siteName: 'Software Engineer - Kyle Welsby',
   siteDescription:
     'Passionate Software Engineer ranked top 1% JavaScript, top 2% Vue.js, top 5% Ruby developer in the world.',
   pathPrefix: process.env.BASE_PATH || '',
