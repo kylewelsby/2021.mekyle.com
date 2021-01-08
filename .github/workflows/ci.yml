@@ -46,7 +46,8 @@ jobs:
         run: yarn build
         env:
           NODE_ENV: production
-          BASE_PATH: /2021.mekyle.com
+          # BASE_PATH: /2021.mekyle.com
+          BASE_PATH: /
           DEV_TO_API_KEY: ${{ secrets.DEV_TO_API_KEY }}
 
       - name: Run tests 🧪
