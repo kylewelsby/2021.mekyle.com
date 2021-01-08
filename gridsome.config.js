@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: 'Software Engineer - Kyle Welsby',
+  siteUrl: 'https://mekyle.com',
   siteDescription:
     'Passionate Software Engineer ranked top 1% JavaScript, top 2% Vue.js, top 5% Ruby developer in the world.',
   pathPrefix: process.env.BASE_PATH || '',
