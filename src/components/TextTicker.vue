@@ -33,7 +33,7 @@ export default Vue.extend({
     },
     speed: {
       type: Number,
-      default: 50,
+      default: 25,
     },
     color: {
       type: String,

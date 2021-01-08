@@ -16,14 +16,17 @@
           :key="edge.id"
           :project="edge.node"
         )
+        MoreProjects
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import ProjectSummary from './ProjectSummary.vue'
+import MoreProjects from './MoreProjects.vue'
 export default Vue.extend({
   components: {
     ProjectSummary,
+    MoreProjects,
   },
   props: {
     projects: {

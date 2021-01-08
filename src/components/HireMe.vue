@@ -1,7 +1,7 @@
 <template lang="pug">
   a(
     href="https://calendly.com/mekyle"
-    class="block relative rounded-2xl text-white px-6 text-center h-64 flex flex-col items-center justify-center overflow-hidden bg-gray-900"
+    class="block relative rounded-2xl text-white px-6 text-center h-64 flex flex-col items-center justify-center overflow-hidden bg-gray-800"
   )
     div.relative.z-30
       h4.text-4xl.font-light.mb-2 Your Company?

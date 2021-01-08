@@ -6,19 +6,12 @@
   )
     div.relative.z-30
       h4.sr-only.text-2xl.font-bold.mb-2 {{ article.title }}
-      | {{ article.flare_tag }}
     div(
-      class="static top-0 left-0 h-full w-full"
+      class="absolute z-0 top-0 left-0 h-full w-full bg-cover"
+      :style="{ backgroundImage: `url(${article.cover_image})` }"
     )
-      g-image(
-        :src="article.cover_image"
-        width="568"
-        height="224"
-        fit="contain"
-        imageWidths="568,1136"
-      )
     span(
-      class="absolute z-0 top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black to-transparent opacity-10"
+      class="absolute z-10 top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-black to-transparent opacity-20"
     )
 </template>
 <script lang="ts">

@@ -24,8 +24,8 @@ function render(state) {
     )
     n++
   }
-  state.row1x += -0.5
-  state.row2x += 0.5
+  state.row1x += -0.25
+  state.row2x += 0.25
 }
 
 function loop(state) {
@@ -37,7 +37,7 @@ function loop(state) {
       render(state)
       loop(state)
     })
-  }, 50)
+  }, 100)
 }
 
 export function start(canvas, text, state) {

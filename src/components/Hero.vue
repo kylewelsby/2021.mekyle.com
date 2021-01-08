@@ -28,7 +28,7 @@
             )
 
       div(
-        class="motion-reduce:hidden absolute z-0 top-0 left-0 right-0 bottom-0 overflow-hidden bg-gray-500 rounded-b-2xl"
+        class="motion-reduce:hidden absolute z-0 top-0 left-0 right-0 bottom-0 overflow-hidden bg-gray-800 rounded-b-2xl"
       )
         HeroText(
           :skills="skills"
@@ -46,14 +46,17 @@
       div(
         class="absolute -bottom-36 right-0 w-1/2"
       )
-        g-image(
-          alt="Standing portrait of Kyle Welsby smiling with iconic curly hair"
-          width="1136"
-          height="1704"
-          quality="80"
-          fit="inside"
-          src="~/images/portraits/kyle-welsby-portrait-removebg.png"
+        div(
+          class="xl:ml-20"
         )
+          g-image(
+            alt="Standing portrait of Kyle Welsby smiling with iconic curly hair"
+            width="960"
+            height="1739"
+            quality="80"
+            fit="inside"
+            src="~/images/portraits/kyle-welsby-portrait-halo-removebg.png"
+          )
 
 </template>
 <script lang="ts">

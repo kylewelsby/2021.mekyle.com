@@ -7,7 +7,7 @@
         :height="500"
         :rows="20"
         :speed="25"
-        color="rgba(110,108,92,1)"
+        color="rgba(0,0,0,.1)"
       ) {{ formattedText }}
 </template>
 
