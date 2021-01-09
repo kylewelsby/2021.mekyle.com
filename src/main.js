@@ -26,12 +26,13 @@ export default function (Vue, { router, head, isClient }) {
   head.script.push({
     innerHTML: JSON.stringify({
       '@context': 'http://schema.org/',
-      '@type': 'Person',
+      '@type': 'Organization',
       name: 'Kyle Welsby',
       brand: 'MeKyle LTD',
       jobTitle: 'Software Engineer',
       telephone: '+447575790552',
       url: 'https://mekyle.com',
+      logo: 'https://mekyle.com/assets/static/icon-512x512.png',
       nationality: 'United Kingdom',
       vatID: 'GB228 3349 04',
       address: {
