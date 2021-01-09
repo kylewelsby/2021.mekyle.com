@@ -11,14 +11,6 @@ module.exports = function (api) {
     // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   })
 
-  api.createPages(({ createPage }) => {
-    // Use the Pages API here: https://gridsome.org/docs/pages-api/
-    createPage({
-      path: '/cv',
-      component: './src/pages/CV.vue',
-    })
-  })
-
   api.afterBuild(({ redirects, config }) => {
     const template = `<!doctype html>
 <title>https://mekyle.com.com{{}}</title>

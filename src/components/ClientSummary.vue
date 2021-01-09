@@ -16,6 +16,7 @@
         fit="contain"
         imageWidths="32,64"
         class="client-image"
+        :alt="`${client.title} icon`"
       )
     div(
       class="text-xs self-start"

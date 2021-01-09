@@ -5,13 +5,31 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Software Engineer - Kyle Welsby',
+  siteName: 'Kyle Welsby - Full Stack JavaScript and Ruby Software Engineer',
   siteUrl: 'https://mekyle.com',
   siteDescription:
     'Passionate Software Engineer ranked top 1% JavaScript, top 2% Vue.js, top 5% Ruby developer in the world.',
   pathPrefix: process.env.BASE_PATH || '',
   icon: './src/icon.png',
   plugins: [
+    {
+      use: 'gridsome-plugin-robots-txt',
+      options: {
+        policy: [
+          {
+            userAgent: '*',
+            allow: '/',
+            disallow: '/cv',
+          },
+        ],
+      },
+    },
+    {
+      use: '@gridsome/plugin-critical',
+      options: {
+        paths: ['/'],
+      },
+    },
     {
       use: 'gridsome-plugin-tailwindcss',
     },
@@ -28,7 +46,7 @@ module.exports = {
     {
       use: 'gridsome-plugin-pwa',
       options: {
-        title: 'Software Engineer - Kyle Welsby',
+        title: 'Kyle Welsby - Full Stack JavaScript and Ruby Software Engineer',
         display: 'browser',
         startUrl: process.env.BASE_PATH || '/',
         themeColor: '#181818',

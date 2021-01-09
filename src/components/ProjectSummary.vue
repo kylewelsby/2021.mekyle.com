@@ -12,7 +12,7 @@
         v-if="project.icon"
       )
         g-image(
-          :alt="project.title"
+          :alt="`${project.title} icon`"
           :src="project.icon"
           width="32"
           height="32"

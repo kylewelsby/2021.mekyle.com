@@ -14,6 +14,7 @@
     "gridsome": "^0.7.0"
   },
   "devDependencies": {
+    "@gridsome/plugin-critical": "^0.2.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
     "@tailwindcss/postcss7-compat": "^2.0.2",
@@ -25,6 +26,7 @@
     "gridsome-plugin-plausible-analytics": "^1.0.0",
     "gridsome-plugin-pug": "^0.0.3",
     "gridsome-plugin-pwa": "^0.0.18",
+    "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-tailwindcss": "^4.1.1",
     "gridsome-source-rest": "^1.0.11",
     "husky": "^4.3.6",

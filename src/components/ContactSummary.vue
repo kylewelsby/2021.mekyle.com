@@ -13,6 +13,7 @@
         fit="contain"
         imageWidths="32,64"
         class="contact-image fill-current"
+        :alt="contact.title"
       )
     div(
       class="absolute z-0 top-0 left-0 right-0 bottom-0"
