@@ -53,6 +53,7 @@ export default function (Vue, { router, head, isClient }) {
         'https://www.behance.net/mekyle',
         'https://soundcloud.com/mekyle',
         'https://ko-fi.com/A3403WZD',
+        'https://www.producthunt.com/@kylewelsby',
       ],
     }),
     type: 'application/ld+json',

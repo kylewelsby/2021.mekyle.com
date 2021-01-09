@@ -13,6 +13,12 @@ module.exports = {
   icon: './src/icon.png',
   plugins: [
     {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        exclude: ['/cv'],
+      },
+    },
+    {
       use: 'gridsome-plugin-robots-txt',
       options: {
         policy: [
