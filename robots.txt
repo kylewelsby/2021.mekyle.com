@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /cv
+Sitemap: https://mekyle.com/sitemap.xml
+Host: https://mekyle.com
