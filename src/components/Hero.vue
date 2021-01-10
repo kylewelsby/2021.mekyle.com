@@ -37,7 +37,7 @@
       class="mt-4 p-4 md:p-0 max-w-6xl mx-auto md:grid md:grid-cols-12 text-white"
     )
       div(
-        class="md:col-start-2 md:col-span-5"
+        class="intro md:col-start-2 md:col-span-5 text-xl tracking-wide"
       )
         slot
     div(
@@ -74,3 +74,10 @@ export default Vue.extend({
   },
 })
 </script>
+<style>
+.intro strong {
+  @apply underline;
+  text-decoration-color: rgba(59, 130, 246, 1);
+  text-decoration-thickness: 0.15rem;
+}
+</style>

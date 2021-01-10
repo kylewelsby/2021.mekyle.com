@@ -2,7 +2,10 @@
   Layout
     Hero(
       :skills="skills"
-    ) {{ introduction }}
+    )
+      span(
+        v-html="introduction"
+      )
     CodersRank(
       class="relative z-30"
     )
@@ -135,7 +138,7 @@ export default {
         'CloudFlare',
       ],
       introduction:
-        'Passionate software engineer focused on delivering fantastic customer experiances and business objectives, creating tools to automate repetitive tasks and improve the discoverability of information.',
+        'Passionate <strong>full-stack software engineer</strong> focused on delivering fantastic customer experiences and business objectives, with <strong>two decades of experience</strong> creating tools to automate repetitive tasks and improve information discovery.',
     }
   },
   metaInfo() {
