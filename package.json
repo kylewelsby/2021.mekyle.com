@@ -18,7 +18,7 @@
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/source-filesystem": "^0.6.2",
     "@gridsome/transformer-remark": "^0.6.4",
-    "@tailwindcss/postcss7-compat": "^2.0.2",
+    "@tailwindcss/postcss7-compat": "^2.0.3",
     "autoprefixer": "^9",
     "eslint": "^7.18.0",
     "eslint-config-prettier": "^7.2.0",
