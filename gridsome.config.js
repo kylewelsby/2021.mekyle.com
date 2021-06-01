@@ -78,7 +78,7 @@ module.exports = {
         debug: true,
         axiosConfig: {
           headers: {
-            'api_key': process.env.DEV_TO_API_KEY,
+            api_key: process.env.DEV_TO_API_KEY,
           },
         },
         endpoint: 'https://dev.to/api/articles/me/published',
