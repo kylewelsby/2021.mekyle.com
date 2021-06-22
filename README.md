@@ -1,14 +1,14 @@
-# Default starter for Gridsome
+# Kyle Welsby 2021 Website
 
-This is the project you get when you run `gridsome create new-project`.
+Hello curious repo visitor, this is the sourcecode for my personal website [mekyle.com](https://mekyle.com).
 
-### 1. Install Gridsome CLI tool if you don't have
+## 🎲 Quick Start
 
-`npm install --global @gridsome/cli`
+```
+yarn install
+yarn develop
+```
 
-### 2. Create a Gridsome project
+## 🎓 License
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+MIT: https://kylewelsby.mit-license.org
