@@ -37,7 +37,7 @@
     "pug": "^3.0.0",
     "serve": "^11.3.2",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
-    "vue-eslint-parser": "^7.6.0"
+    "vue-eslint-parser": "^7.7.2"
   },
   "husky": {
     "hooks": {
