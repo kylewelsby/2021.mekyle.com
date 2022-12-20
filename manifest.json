@@ -5,6 +5,8 @@
   "display": "browser",
   "theme_color": "#181818",
   "background_color": "#ffffff",
+  "screenshots": [],
+  "shortcuts": [],
   "gcm_sender_id": null,
   "icons": [
     {
