@@ -14,18 +14,18 @@
         :style="{'background-image': `url(${require('~/images/code-icons.svg?inline')})`}"
       )
         div(
-          class="text-2xl md:text-6xl font-light text-left tracking-wide leading-snug py-4 px-6 md:p-20"
+          class="relative text-2xl md:text-6xl font-light text-left tracking-wide leading-snug py-4 px-6 md:p-20 md:pr-18 md:h-[564px]"
         )
-          | Ranked top 1% <strong class="font-semibold">JavaScript</strong>,
+          | Ranked top 0.5% <strong class="font-semibold">JavaScript</strong>,
           br
           | top 2% <strong class="font-semibold">Vue.js</strong>,
-          | and top 5% <strong class="font-semibold">Ruby</strong>
+          | and top 0.4% <strong class="font-semibold">Ruby</strong>
           br
           | developer in the World!
         svg(
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1316 564"
-          class="-mt-96 -mb-28"
+          class="absolute bottom-0"
         )
           path(
             fill="#000000"

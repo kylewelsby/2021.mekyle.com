@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Kyle Welsby - Full Stack JavaScript and Ruby Software Engineer',
   siteUrl: 'https://mekyle.com',
   siteDescription:
-    'Passionate full-stack Software Engineer ranked top 1% JavaScript, top 2% Vue.js, top 5% Ruby developer in the world, with two decades of experience.',
+    'Passionate full-stack Software Engineer ranked top 0.5% JavaScript, top 2% Vue.js, top 0.4% Ruby developer in the world, with two decades of experience.',
   pathPrefix: process.env.BASE_PATH || '',
   icon: './src/icon.png',
   redirects: [
