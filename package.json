@@ -26,7 +26,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "gridsome-plugin-plausible-analytics": "^1.0.0",
     "gridsome-plugin-pug": "^0.0.3",
-    "gridsome-plugin-pwa": "^0.0.18",
+    "gridsome-plugin-pwa": "^0.0.22",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-tailwindcss": "^4.1.1",
     "gridsome-source-rest": "^1.0.11",
