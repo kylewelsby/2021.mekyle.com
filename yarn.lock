@@ -3407,10 +3407,10 @@ core-js@^2.4.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.6.4, core-js@^3.6.5:
-  version "3.15.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.15.1.tgz#6c08ab88abdf56545045ccf5fd81f47f407e7f1a"
-  integrity sha512-h8VbZYnc9pDzueiS2610IULDkpFFPunHwIpl8yRwFahAEEdSpHlTy3h3z3rKq5h11CaUdBEeRViu9AYvbxiMeg==
+core-js@^3.21.0, core-js@^3.6.4, core-js@^3.6.5:
+  version "3.26.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
+  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -5754,10 +5754,12 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-plausible-analytics@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-plausible-analytics/-/gridsome-plugin-plausible-analytics-1.0.0.tgz#251d21334d6ac12df8967724fc55a079ffec9395"
-  integrity sha512-KMEQzxy3jefHH8ZDPbKttsrrEt4uSebn+saHtRkZx9pXR7DJmge0uE6+ImzsBXdpNuOvMTa6XGZVrwm00VC/QQ==
+gridsome-plugin-plausible-analytics@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-plausible-analytics/-/gridsome-plugin-plausible-analytics-1.1.0.tgz#34026a2a8f57a8ab2b4da59be90df0b05a6a181d"
+  integrity sha512-XJ8aW+n9KHee2hrVoZyIY5LnvpmBtOzutTqysx7h4edVh+4FN1nxwexVbCB0vQTGUKrPV7cJhpgC3/DK3G4whg==
+  dependencies:
+    core-js "^3.21.0"
 
 gridsome-plugin-pug@^0.0.3:
   version "0.0.3"
