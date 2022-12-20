@@ -1,6 +1,7 @@
 name: live
 
-on: [deployment_status]
+on:
+  deployment
 
 jobs:
   lighthouse:
