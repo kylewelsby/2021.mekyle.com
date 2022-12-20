@@ -6,7 +6,7 @@ jobs:
   lighthouse:
     name: lighthouse
     runs-on: ubuntu-22.04
-    if: github.event.deployment_status.state == 'success' && github.event.deployment_status.creator.login == 'github-pages[bot]'
+    if: github.event.deployment_status.state == 'success'
 
     env:
       URL: ${{ github.event.deployment_status.environment_url }}
