@@ -21,7 +21,7 @@
     "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "^10",
     "eslint": "^7",
-    "eslint-config-prettier": "^8.3",
+    "eslint-config-prettier": "^8.6",
     "eslint-plugin-gridsome": "^1.5",
     "eslint-plugin-prettier": "^4.2",
     "gridsome-plugin-plausible-analytics": "^1",
