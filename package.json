@@ -23,7 +23,7 @@
     "eslint": "^8",
     "eslint-config-prettier": "^8.3",
     "eslint-plugin-gridsome": "^1.5",
-    "eslint-plugin-prettier": "^5.0",
+    "eslint-plugin-prettier": "^5.5",
     "gridsome-plugin-plausible-analytics": "^1",
     "gridsome-plugin-pug": "^0.0.3",
     "gridsome-plugin-pwa": "^0.0.22",
