@@ -10,7 +10,7 @@
       ) Code.
       a(
         :href="href"
-        class="flex bg-blue-500 -mt-3 md:-mt-6 rounded-2xl overflow-hidden bg-cover"
+        class="relative flex bg-blue-500 -mt-3 md:-mt-6 rounded-2xl overflow-hidden bg-cover"
         :style="{'background-image': `url(${require('~/images/code-icons.svg?inline')})`}"
       )
         div(
@@ -25,7 +25,8 @@
         svg(
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1316 564"
-          class="absolute bottom-0"
+          class="absolute bottom-0 left-0 right-0 w-full max-w-full"
+          preserveAspectRatio="xMidYMax slice"
         )
           path(
             fill="#000000"
