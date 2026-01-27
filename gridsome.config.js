@@ -35,12 +35,13 @@ module.exports = {
         ],
       },
     },
-    {
-      use: '@gridsome/plugin-critical',
-      options: {
-        paths: ['/'],
-      },
-    },
+    // Critical CSS plugin disabled - requires Puppeteer/Chromium not available in Cloudflare
+    // {
+    //   use: '@gridsome/plugin-critical',
+    //   options: {
+    //     paths: ['/'],
+    //   },
+    // },
     {
       use: 'gridsome-plugin-tailwindcss',
     },
