@@ -73,21 +73,26 @@ module.exports = {
         gcmSenderId: null,
       },
     },
-    {
-      use: 'gridsome-source-rest',
-      options: {
-        debug: true,
-        axiosConfig: {
-          headers: {
-            api_key: process.env.DEV_TO_API_KEY,
+    // Only load Dev.to articles if API key is available
+    ...(process.env.DEV_TO_API_KEY
+      ? [
+          {
+            use: 'gridsome-source-rest',
+            options: {
+              debug: true,
+              axiosConfig: {
+                headers: {
+                  api_key: process.env.DEV_TO_API_KEY,
+                },
+              },
+              endpoint: 'https://dev.to/api/articles/me/published',
+              typeName: 'devToArticle',
+              isStatic: false,
+              isCollection: true,
+            },
           },
-        },
-        endpoint: 'https://dev.to/api/articles/me/published',
-        typeName: 'devToArticle',
-        isStatic: false,
-        isCollection: true,
-      },
-    },
+        ]
+      : []),
     {
       use: '@gridsome/source-filesystem',
       options: {
