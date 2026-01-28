@@ -6,6 +6,14 @@ export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   head.meta.push({
+    name: 'robots',
+    content: 'noindex, nofollow',
+  })
+  head.link.push({
+    rel: 'canonical',
+    href: 'https://mekyle.com',
+  })
+  head.meta.push({
     name: 'keywords',
     content: [
       'Website Development',
