@@ -20,7 +20,7 @@
     "@gridsome/transformer-remark": "^0.6.4",
     "@tailwindcss/postcss7-compat": "npm:@tailwindcss/postcss7-compat",
     "autoprefixer": "^10",
-    "eslint": "^8",
+    "eslint": "^9",
     "eslint-config-prettier": "^8.3",
     "eslint-plugin-gridsome": "^1.5",
     "eslint-plugin-prettier": "^5.0",
