@@ -33,7 +33,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.0.0",
     "postcss": "^7",
-    "prettier": "^3.0",
+    "prettier": "^3.8",
     "pug": "^3.0.0",
     "serve": "^14",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat",
