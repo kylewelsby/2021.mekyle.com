@@ -30,7 +30,7 @@
     "gridsome-plugin-robots-txt": "^1.0.2",
     "gridsome-plugin-tailwindcss": "^4.1.1",
     "gridsome-source-rest": "^1.0.11",
-    "husky": "^8.0.3",
+    "husky": "^9.1.7",
     "lint-staged": "^13.0.0",
     "postcss": "^7",
     "prettier": "^3.0",
